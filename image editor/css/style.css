@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*body style*/
+body{
+    width:100%;
+    height: 100vh;
+    background-color: #cce0f3;
+    overflow: hidden;
+}
+
+/*page div style*/
+.page{
+    width:76%;
+    height:72vh;
+    margin: 90px 160px;
+    padding:40px 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgb(107, 105, 105);
+}
+
+/*main header style*/
+#main_header{
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+/*content div style*/
+.content{
+    display:flex;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+/*content div .disable style*/
+.disable :where(.options ,.reset , .saveimg){
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/*content options div style*/
+.content .options{
+    height: 300px;
+    flex-basis:305px;
+    margin:0 20px 0 20px;
+    border:1px solid #e2d8d8;
+    padding:20px;
+} 
+
+/*content options btns div first button style*/
+.active{
+    color:#fff;
+    background-color:#482fb8;
+}
+
+/*content range div style*/
+.content .range{
+    width:100%;
+    margin: 20px 0;
+}
+
+/*content range text div style*/
+.content .range .text{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/*content range div range style*/
+.content .range #range{
+    width:100%;
+    cursor: pointer;
+}
+
+/*content image div*/
+.content .image{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width:605px;
+}
+
+/*content image div img*/
+.content .image img{
+    text-align: center;
+    height: 100%;
+    width:100%;
+}
+
+/*endBtns div*/
+.endBtns{
+    display: flex;
+    justify-content:space-between;
+    width:100%;
+}
+
+/*endBtns div reset btn */
+.endBtns #reset{
+    margin-left:20px;
+}
+
+/*endBtns div choose image btn*/
+.endBtns #chooseImg{
+    color:#fff;
+    background-color:#978e8e; ;
+}
+
+/*endBtns div save image btn*/
+.endBtns #saveImg{
+    margin-left:10px;
+    color:#fff;
+    background-color:#482fb8; 
+}

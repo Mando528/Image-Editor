@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/class.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Image Editor</title>
+</head>
+<body>
+    <div class="page">
+        <h2 id="main_header">Easy Image Editor</h2>
+        <div class="container disable">
+            <div class="content">
+                <div class="options">
+                    <h3 class="op_header">Filters</h3>
+                    <div class="btns">
+                        <button class="btn active" id="brightness">Brightness</button>
+                        <button class="btn" id="saturation">Saturation</button>
+                        <button class="btn" id="inversion">Inversion</button>
+                        <button class="btn" id="grayscale">Grayscale</button>
+                    </div>
+                    <div class="range">
+                        <div class="text">
+                            <p id="selectedBtn">Brightness</p>
+                            <p id="precentage">100%</p>
+                        </div>
+                        <input type="range" id="range" value="100" min="0" max="200">
+                    </div>
+                    <div class="rotate_flip">
+                        <h3 class="op_header">Rotate & Flip</h3>
+                        <div class="btns">
+                            <button class="bttn" id="rotLeft"><i class="fa-solid fa-rotate-left"></i></button>
+                            <button class="bttn" id="rotRight"><i class="fa-solid fa-rotate-right"></i></button>
+                            <button class="bttn" id="refVer"><i class='bx bx-reflect-vertical'></i></button>
+                            <button class="bttn" id="refHor"><i class='bx bx-reflect-horizontal'></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="image-placeholder.svg" alt="image" id="img">
+                </div>
+            </div>
+            <div class="endBtns">
+                <input type="file" id="filePick" accept="image/*" hidden>
+                <button class="endBtn reset" id="reset">Reset Filters</button>
+                <div class="rightBtns">
+                    <button class="endBtn chooseimg" id="chooseImg">Choose Image</button>
+                    <button class="endBtn saveimg" id="saveImg">Save Image</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
